@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Joystix+Monospace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Righteous&family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Righteous&family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Righteous&family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: "Righteous", serif;
+}
+
+.circle{
+  background-image: url('https://e7.pngegg.com/pngimages/751/549/png-clipart-pixel-art-donuts-kavaii-others-miscellaneous-magenta.png');
+  background-size: cover;
+}
+.q1{
+  font-size: 50px;
+  color: black;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.jp{
+ font-family: 'Staatliches', cursive;
+}
+.p{
+  font-family: 'Staatliches', cursive;
+}
+.shapes {
+  /* background-image: url('./assets/shape3.png'); url() ke andar likhna hai */
+  width: 100%;
+  height: 800px;
+  background-size: cover; /* Image pura area cover kare */
+  background-position: center; /* Center me dikhaye */
+}
+
+.alpB:nth-child(2){
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #ffffff; /* Adjust as needed */
+    font-weight: ;
+}
+.alpB:nth-child(1){
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size:25px;
+}

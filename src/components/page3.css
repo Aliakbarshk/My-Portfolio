@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&family=Righteous&family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Righteous&family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+.st{
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow: hidden;
+}
+.skpara{
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  /* font-weight: 500; */
+  font-style: normal;
+}
+.skhead{
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.skt{
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  transition: 90ms ease-in-out;
+}
+.skt:hover{
+  font-weight: 400;
+  text-decoration:underline;
+
+}
+.skstr{
+  background-color: #D4A5FF;
+  /* color: white; */
+
+  font-weight: 600;
+  transition: 80ms;
+
+}
+.skstr:hover{
+  background-color: #e4c7ff;
+  /* text-decoration: underline;  */
+  font-weight: 400;
+  opacity: 50;
+}
