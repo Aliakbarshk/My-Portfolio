@@ -107,7 +107,7 @@ function App() {
           <div className="htext flex flex-col items-center">
             <h6 className="alpB text-lg sm:text-2xl">I'm Aliakbar</h6>
             <h6 className="alpB text-base sm:text-2xl font-extralight">
-              Aspiring Frontend Developer & Tech Enthusiast.
+              Aspiring Web Developer & Tech Enthusiast.
             </h6>
           </div>
         </div>
