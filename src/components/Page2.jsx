@@ -2,6 +2,8 @@ import React from "react";
 import "./Page2.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import background from "../assets/background.gif";
+
 
 const Page2 = () => {
   useGSAP(() => {
@@ -15,6 +17,7 @@ const Page2 = () => {
 
   return (
     <div className="mainn flex flex-col p-[20px] justify-center items-center bg-[#E2E0C8] h-[800px]">
+    
       <div className="flex flex-row gap-3">
         <h2 className="more text-gray-800 text-3xl">More</h2>
         <h2 className="text-3xl font-bold mb-4 text-gray-800 font-sans">
