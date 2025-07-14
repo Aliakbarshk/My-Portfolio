@@ -11,6 +11,10 @@ import Page2 from "./components/Page2.jsx";
 import Page3 from "./components/page3.jsx";
 import Page4 from "./components/page4.jsx";
 import FForm from "./components/form.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link, Element } from "react-scroll";
+
+
 
 function App() {
   const [tl] = useState(() => gsap.timeline());
@@ -104,15 +108,23 @@ function App() {
           <a href="" className="nv text-sm sm:text-base">
             Home
           </a>
+
           <a href="" className="nv text-sm sm:text-base">
-            About
+            <Link to="p2" smooth={true} duration={500}>
+              about
+            </Link>
           </a>
           <a href="" className="nv text-sm sm:text-base">
-            Skills
+            <Link to="p3" smooth={true} duration={500}>
+              skills
+            </Link>
           </a>
           <a href="" className="nv text-sm sm:text-base">
-            Projects
+            <Link to="p4" smooth={true} duration={500}>
+              projects
+            </Link>
           </a>
+
           <div
             className="button w-40 h-10 bg-lime-500 cursor-pointer select-none
               active:translate-y-2 active:[box-shadow:0_0px_0_0_#1b6ff8,0_0px_0_0_#1b70f841]
@@ -120,7 +132,9 @@ function App() {
               rounded-full border-[1px] border-blue-400 relative left-1/2 sm:left-[50%] transform -translate-x-1/2"
           >
             <span className="flex flex-col justify-center items-center h-full text-white text-[16px] sm:text-[20px] p-[10px]">
-              Contact Me
+              <Link to="fr" smooth={true} duration={500}>
+                Contact
+              </Link>
             </span>
           </div>
         </div>
@@ -159,13 +173,42 @@ function App() {
           </div>
         </div>
       </div>
-
-      <Page2 className="p2" />
-      <Page3 className="p3" />
-      <Page4 className="p4" />
-      <FForm className="fr" />
+      <Element name="p2">
+        <div className="min-h-screen">
+          <Page2 />
+        </div>
+      </Element>
+      <Element name="p3">
+        <div className="min-h-screen">
+          <Page3 />
+        </div>
+      </Element>
+      <Element name="p4">
+        <Page4 className="p4" />
+      </Element>
+      <Element name="fr">
+        <FForm className="fr" />
+      </Element>
     </>
+  );
+
+
+     
+}
+function routing() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Page2/>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
+
+
 export default App;
+

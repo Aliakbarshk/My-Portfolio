@@ -1,75 +1,51 @@
 import React from "react";
 
-function LoginForm() {
+// Add this to your index.html or public/index.html <head>:
+// <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+const LoginForm = () => {
   return (
-    <form className="max-w-sm mx-auto mt-10 p-4 bg-white rounded-xl shadow-lg dark:bg-gray-800">
-      <div className="mb-5">
-        <label
-          htmlFor="email"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-        >
-          Your email
-        </label>
+    <div
+      className="min-h-screen flex items-center justify-center bg-[#0b0b0f] px-4"
+      style={{ fontFamily: "'Inter', sans-serif" }}
+    >
+      <form className="w-full max-w-md bg-[#131417] border border-[#1f1f23] p-8 rounded-2xl shadow-[0_0_30px_#00000040]">
+        <h2 className="text-white text-2xl font-semibold mb-6 tracking-wide text-center">
+          Feedback / Contact Me
+        </h2>
+
         <input
           type="email"
-          id="email"
-          placeholder="name@flowbite.com"
-          required
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
-            focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
-            dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-            dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Your Email"
+          className="w-full mb-4 px-4 py-3 rounded-lg bg-[#0e0f12] text-white placeholder-gray-500 border border-[#2a2a2f] focus:outline-none focus:ring-2 focus:ring-[#5eead4] transition"
         />
-      </div>
 
-      <div className="mb-5">
-        <label
-          htmlFor="password"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-        >
-          Your Message
-        </label>
-        <input
-          type="text space"
-          id="password"
-          required
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
-          h-10
-            focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
-            dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-            dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        <textarea
+          placeholder="Your Message..."
+          rows="4"
+          className="w-full mb-4 px-4 py-3 rounded-lg bg-[#0e0f12] text-white placeholder-gray-500 border border-[#2a2a2f] focus:outline-none focus:ring-2 focus:ring-[#5eead4] transition resize-none"
         />
-      </div>
 
-      <div className="flex items-start mb-5">
-        <div className="flex items-center h-5">
+        <div className="flex items-center mb-6">
           <input
             id="remember"
             type="checkbox"
-            required
-            className="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 
-              dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 
-              dark:focus:ring-offset-gray-800"
+            className="w-4 h-4 rounded-sm accent-[#5eead4] bg-[#0e0f12] border border-gray-600"
           />
+          <label htmlFor="remember" className="ml-2 text-gray-400 text-sm">
+            Remember me
+          </label>
         </div>
-        <label
-          htmlFor="remember"
-          className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-        >
-          Remember me
-        </label>
-      </div>
 
-      <button
-        type="submit"
-        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none 
-          focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center 
-          dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-      >
-        Submit
-      </button>
-    </form>
+        <button
+          type="submit"
+          className="w-full py-3 rounded-lg bg-gradient-to-r from-[#5eead4] to-[#2dd4bf] text-black font-semibold tracking-wider hover:opacity-90 transition"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
   );
-}
+};
 
 export default LoginForm;
