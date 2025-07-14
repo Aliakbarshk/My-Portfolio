@@ -10,7 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Page2 from "./components/Page2.jsx";
 import Page3 from "./components/page3.jsx";
 import Page4 from "./components/page4.jsx";
-import FForm from "./components/form.jsx";
+import Fform from "./components/form.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Link, Element } from "react-scroll";
 
@@ -187,25 +187,13 @@ function App() {
         <Page4 className="p4" />
       </Element>
       <Element name="fr">
-        <FForm className="fr" />
+        <Fform className="fr" />
       </Element>
     </>
   );
 
 
      
-}
-function routing() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Page2/>} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-    </BrowserRouter>
-  );
 }
 
 

@@ -3,6 +3,7 @@ import "./page4.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import portfolio from "../assets/portfolio.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -103,6 +104,38 @@ const Page4 = () => {
               className="object-cover object-center w-full h-full"
               src="https://dummyimage.com/600x300"
               alt="stats"
+            />
+          </div>
+          <div className="emptygap"></div>
+          <div className="cont2 flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+            <div className="w-full sm:p-4 px-4 mb-6">
+              <h1 className="title-font font-medium text-xl mb-2 text-black">
+                Portfolio Website
+              </h1>
+              <p className="leading-relaxed text-black">
+                I built a professional portfolio showcasing my projects, skills,
+                and experience using ReactJS and modern design.
+              </p>
+            </div>
+            <div className="proT p-4 sm:w-1/2 lg:w-1/4 w-1/2 flex items-center">
+              <p className="leading-relaxed ml-2 text-black">HTML</p>
+            </div>
+            <div className="proT p-4 sm:w-1/2 lg:w-1/4 w-1/2 flex items-center">
+              <p className="leading-relaxed ml-2 text-black">CSS</p>
+            </div>
+            <div className="proT p-4 sm:w-1/2 lg:w-1/4 w-1/2 flex items-center">
+              <p className="leading-relaxed ml-2 text-black">JavaScript</p>
+            </div>
+            <div className="proT p-4 sm:w-1/2 lg:w-1/4 w-1/2 flex items-center">
+              <p className="leading-relaxed ml-2 text-black">ReactJS</p>
+            </div>
+          </div>
+
+          <div className="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+            <img
+              className="object-cover object-center w-full h-full"
+              src={portfolio}
+              alt="Portfolio Screenshot"
             />
           </div>
         </div>

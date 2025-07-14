@@ -1,51 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
-// Add this to your index.html or public/index.html <head>:
-// <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+const Fform = () => {
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
 
-const LoginForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!name || !message) return alert("Please fill both fields");
+
+    axios
+      .post("https://sign-in-login-backend.onrender.com/register", {
+        name,
+        message,
+      })
+      .then(() => console.log("Message sent"))
+      .catch(() => alert("Failed to send"));
+  };
+
   return (
-    <div
-      className="min-h-screen flex items-center justify-center bg-[#0b0b0f] px-4"
-      style={{ fontFamily: "'Inter', sans-serif" }}
-    >
-      <form className="w-full max-w-md bg-[#131417] border border-[#1f1f23] p-8 rounded-2xl shadow-[0_0_30px_#00000040]">
-        <h2 className="text-white text-2xl font-semibold mb-6 tracking-wide text-center">
-          Feedback / Contact Me
-        </h2>
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <form
+        className="w-96 p-6 bg-white rounded-xl shadow-md"
+        onSubmit={handleSubmit}
+      >
+        <h3 className="text-2xl font-semibold text-center mb-6 text-gray-800">
+          Add a message/feedback
+        </h3>
 
         <input
-          type="email"
-          placeholder="Your Email"
-          className="w-full mb-4 px-4 py-3 rounded-lg bg-[#0e0f12] text-white placeholder-gray-500 border border-[#2a2a2f] focus:outline-none focus:ring-2 focus:ring-[#5eead4] transition"
+          type="text"
+          placeholder="Full Name"
+          className="mb-4 w-full px-4 py-2 border rounded text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+          onChange={(e) => setName(e.target.value)}
+          required
         />
 
         <textarea
-          placeholder="Your Message..."
+          placeholder="Your Message"
           rows="4"
-          className="w-full mb-4 px-4 py-3 rounded-lg bg-[#0e0f12] text-white placeholder-gray-500 border border-[#2a2a2f] focus:outline-none focus:ring-2 focus:ring-[#5eead4] transition resize-none"
+          className="mb-4 w-full px-4 py-2 border rounded resize-none text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+          onChange={(e) => setMessage(e.target.value)}
+          required
         />
-
-        <div className="flex items-center mb-6">
-          <input
-            id="remember"
-            type="checkbox"
-            className="w-4 h-4 rounded-sm accent-[#5eead4] bg-[#0e0f12] border border-gray-600"
-          />
-          <label htmlFor="remember" className="ml-2 text-gray-400 text-sm">
-            Remember me
-          </label>
-        </div>
 
         <button
           type="submit"
-          className="w-full py-3 rounded-lg bg-gradient-to-r from-[#5eead4] to-[#2dd4bf] text-black font-semibold tracking-wider hover:opacity-90 transition"
+          className="w-full py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
         >
-          Submit
+          Send
         </button>
       </form>
     </div>
   );
 };
 
-export default LoginForm;
+export default Fform;
