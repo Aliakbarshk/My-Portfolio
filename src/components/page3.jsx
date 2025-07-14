@@ -129,6 +129,10 @@ const Page3 = () => {
             />
             <p className="text-black">Tailwind CSS</p>
           </div>
+          <div className="border-2 skbox border-gray-300 bg-white text-black text-center font-semibold text-lg p-6 rounded-lg shadow-md hover:shadow-lg transition flex flex-col items-center w-40">
+            <i className="fa-brands fa-github text-black text-4xl"></i>
+            <p className="text-black">GitHub</p>
+          </div>
         </div>
 
         {/* Paragraphs and backend section - untouched */}
@@ -189,6 +193,52 @@ const Page3 = () => {
             become a complete developer.
           </p>
         </div>
+      </div>
+      {/* AI Tools Section */}
+      <div className="mx-auto mt-10 flex flex-wrap justify-center gap-6">
+        {/* ChatGPT */}
+        <div className="border-2 skbox border-gray-300 bg-white text-black text-center font-semibold text-sm p-4 rounded-lg shadow-md hover:shadow-lg transition flex flex-col items-center w-32">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
+            alt="ChatGPT"
+            className="w-10 h-10 object-contain mb-2"
+          />
+          <p className="text-black">ChatGPT</p>
+        </div>
+
+        {/* Gemini (custom image) */}
+        <div className="border-2 skbox border-gray-300 bg-white text-black text-center font-semibold text-sm p-4 rounded-lg shadow-md hover:shadow-lg transition flex flex-col items-center w-32">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr7qrIazsvZwJuw-uZCtLzIjaAyVW_ZrlEQ&s"
+            alt="Gemini"
+            className="w-10 h-10 object-contain mb-2 rounded"
+          />
+          <p className="text-black">Gemini</p>
+        </div>
+
+        {/* Grok (custom image) */}
+        <div className="border-2 skbox border-gray-300 bg-white text-black text-center font-semibold text-sm p-4 rounded-lg shadow-md hover:shadow-lg transition flex flex-col items-center w-32">
+          <img
+            src="https://crystalpng.com/wp-content/uploads/2025/02/grok_logo.png"
+            alt="Grok"
+            className="w-10 h-10 object-contain mb-2 rounded"
+          />
+          <p className="text-black">Grok (X AI)</p>
+        </div>
+      </div>
+
+      <div className="skp mt-4">
+        <p className="skpara text-black text-center">
+          I use{" "}
+          <strong className="skpara skstr text-black">
+            AI as my second brain
+          </strong>{" "}
+          to work
+          <strong className="skpara skstr text-black"> smarter</strong>,
+          <strong className="skpara skstr text-black"> faster</strong>, and more{" "}
+          <strong className="skpara skstr text-black">efficiently</strong> in my
+          development and learning.
+        </p>
       </div>
     </div>
   );
