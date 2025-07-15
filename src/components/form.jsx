@@ -16,6 +16,7 @@ const Fform = () => {
       })
       .then(() => console.log("Message sent"))
       .catch(() => alert("Failed to send"));
+      console.log("Connecting with server...")
   };
 
   return (
