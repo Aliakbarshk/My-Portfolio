@@ -50,6 +50,43 @@ const Fform = () => {
         >
           Send
         </button>
+
+        {/* Social Media Icons */}
+        <div className="flex justify-center gap-6 mt-6">
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
+              alt="LinkedIn"
+              className="w-6 h-6 hover:scale-110 transition"
+            />
+          </a>
+          <a
+            href="https://github.com/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg"
+              alt="GitHub"
+              className="w-6 h-6 hover:scale-110 transition"
+            />
+          </a>
+          <a
+            href="https://twitter.com/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg"
+              alt="Twitter X"
+              className="w-6 h-6 hover:scale-110 transition"
+            />
+          </a>
+        </div>
       </form>
     </div>
   );
