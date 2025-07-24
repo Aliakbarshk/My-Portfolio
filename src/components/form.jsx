@@ -20,9 +20,9 @@ const Fform = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-[#77BEF0]">
       <form
-        className="w-96 p-6 bg-white rounded-xl shadow-md"
+        className="w-[1006px] p-6 bg-white rounded-xl shadow-md"
         onSubmit={handleSubmit}
       >
         <h3 className="text-2xl font-semibold text-center mb-6 text-gray-800">
