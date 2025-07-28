@@ -11,6 +11,7 @@ import Page2 from "./components/Page2.jsx";
 import Page3 from "./components/page3.jsx";
 import Page4 from "./components/page4.jsx";
 import Fform from "./components/form.jsx";
+import FFooter from "./components/ffooter.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Link, Element } from "react-scroll";
 
@@ -189,6 +190,7 @@ function App() {
       <Element name="fr">
         <Fform className="fr" />
       </Element>
+      <FFooter />
     </>
   );
 
