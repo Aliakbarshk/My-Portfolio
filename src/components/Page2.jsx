@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import background from "../assets/background.gif";
 
-
+//just want a push to maintain green :)))) 
 const Page2 = () => {
   useGSAP(() => {
     gsap.from(".para", {
